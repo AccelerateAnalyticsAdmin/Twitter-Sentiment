@@ -4,7 +4,7 @@
 library(plyr)
 library(stringr)
 
-Kasich <- searchTwitter("kasich OR kaisch", n=1200, lang= "en", since=NULL, until=NULL, retryOnRateLimit=20)
+Kasich <- searchTwitter("kasich", n=1200, lang= "en", since=NULL, until=NULL, retryOnRateLimit=20)
 kasich <- strip_retweets(Kasich, strip_manual = TRUE, strip_mt = TRUE)
 
 # Extract tweet text
